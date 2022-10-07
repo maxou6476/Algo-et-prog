@@ -390,7 +390,7 @@ public class Main
         }
         System.out.println("min = " + tempmin);
 
-        System.out.print("elements pair : ");
+        System.out.print("nombre pair : ");
         for (int i = 0;i< tableau.length;i++)
         {
             if (tableau[i]%2 == 0){
@@ -408,6 +408,18 @@ public class Main
             }
         }
         System.out.println("somme des nombres pair = " + sommepair);
+
+        System.out.print("element pair = ");
+        for (int i = 0;i< tableau.length;i++)
+        {
+            if (tableau[i]%2 == 0){
+
+                int tempel = i+1;
+                System.out.print(tempel + " ");
+            }
+        }
+        System.out.println();
+
 
         System.out.print("\naffichage du tableau inversé : ");
         for (int i = 0;i< tableau.length;i++)
