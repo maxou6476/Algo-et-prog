@@ -357,7 +357,7 @@ public class Main
             tableau[i] = scanner.nextInt();
         }
 
-        System.out.print("affichage du tableau avant : ");
+        System.out.print("affichage du tableau initial : ");
         for (int i = 0;i< tableau.length;i++)
         {
             System.out.print(tableau[i]+ " ");
@@ -370,11 +370,52 @@ public class Main
             tableau[i] = vfinal;
             tableau[tableau.length - i - 1] = vinit;
         }
-        System.out.print("\naffichage du tableau aprés : ");
+        System.out.println();
+
+        int tempmax = tableau[0];
+        for (int i = 0;i< tableau.length;i++)
+        {
+            if (tableau[i] > tempmax){
+                tempmax = tempmax;
+            }
+        }
+        System.out.println("max = " + tempmax);
+
+        int tempmin = tableau[0];
+        for (int i = 0;i< tableau.length;i++)
+        {
+            if (tableau[i] < tempmin){
+                tempmin = tableau[i];
+            }
+        }
+        System.out.println("min = " + tempmin);
+
+        System.out.print("elements pair : ");
+        for (int i = 0;i< tableau.length;i++)
+        {
+            if (tableau[i]%2 == 0){
+                System.out.print(tableau[i] + " ");
+            }
+        }
+        System.out.println();
+
+        int sommepair = 0;
+        for (int i = 0;i< tableau.length;i++)
+        {
+            if (tableau[i]%2 == 0){
+
+                sommepair = sommepair + tableau[i];
+            }
+        }
+        System.out.println("somme des nombres pair = " + sommepair);
+
+        System.out.print("\naffichage du tableau inversé : ");
         for (int i = 0;i< tableau.length;i++)
         {
             System.out.print(tableau[i] + " ");
         }
+        System.out.println();
+
 
     }
 
